@@ -1,3 +1,48 @@
 body{
-    background: green;
+    background-color: green;
+    
+
+}  
+
+div{
+    
+    background-color: white;
+       width: 27%;
+    border: 1px solid black;
+    height: 400px;  
+     margin: 2% auto;
+  border-radius: 20px;
+ /** margin-left: 40%; **/
 }
+
+.div1{
+    text-align: left;
+    margin-right: 60%;
+    color:black;
+    font-size: 500%;
+    
+}
+
+
+
+
+.div2{
+    
+    color: black;
+    font-size: 800%;
+    margin-left: 43%;
+    margin-top: 100%;
+    
+}
+
+
+.div3{
+        color:black;
+   
+    font-size: 500%;
+    margin-left: 80%;
+   margin-top: 20%;
+    float: right;
+    rotate:180deg;
+}
+    
