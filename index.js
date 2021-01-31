@@ -57,12 +57,12 @@ document.write("    ");
 
 ///ordenamiento burbuja 
 
-function bubble_Sort(a)
+/*function bubble_Sort(a)
 {
     var swapp;
     var n = a.length-1;
     var x=a;
-    do { 
+    do {
         swapp = false;
         for (var i=0; i < n; i++)
         {
@@ -77,38 +77,17 @@ function bubble_Sort(a)
         n--;
     } while (swapp);
  return x; 
-}
 
+}
 //console.log(bubble_Sort([12,345,4,546,122,84,98,64,9,1,3223,455,23,234,213]));
 document.write(bubble_Sort(nuevo));
 document.write("    ");
-
+ */
 /////////////////////////////////////////////////////////////////////////
 //////////////////sort selection
 
 
-
-
-const selection = arr => {
-  const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]];
-
-  arr.forEach((item, i) => {
-    let min = i;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[min]) min = j;
-    };
-    swap(arr, i, min);
-  });
-
-  return arr;
-};
-
-//console.log(selection([12,345,4,546,122,84,98,64,9,1,3223,455,23,234,213]));
-
-document.write("    ");
-document.write(selection(nuevo));
-
-///////////funcion que recibe un numero del usuario 
+  ///////////funcion que recibe un numero del usuario 
     function recibir()
     {
             //valor es el numero escrito por el usuario
@@ -117,12 +96,10 @@ document.write(selection(nuevo));
         
         //document.getElementById("txt").innerHTML=valor;        
         
-    }      
+    }   
 
- function burbuja()
-    {
-        
-        ///ordenamiento burbuja 
+
+/////////ordenamiento burbuja 
 
 function bubble_Sort(a)
 {
@@ -144,16 +121,35 @@ function bubble_Sort(a)
         n--;
     } while (swapp);
  return x; 
-}
+
 
 //console.log(bubble_Sort([12,345,4,546,122,84,98,64,9,1,3223,455,23,234,213]));
 document.write(bubble_Sort(nuevo));
 document.write("    ");
         //document.getElementById("txt").innerHTML=valor;        
-        
-    }      
+alert("Activaste la funcion miFuncion()");
+          
+  }
+
+
   
+const selection = arr => {
+  const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]];
+
+  arr.forEach((item, i) => {
+    let min = i;
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[min]) min = j;
+    };
+    swap(arr, i, min);
+  });
+
+  return arr;
 
 
+//console.log(selection([12,345,4,546,122,84,98,64,9,1,3223,455,23,234,213]));
 
+document.write("    ");
+document.write(selection(nuevo));
 
+}
