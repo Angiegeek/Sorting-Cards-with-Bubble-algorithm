@@ -20,7 +20,7 @@ mostrar.addEventListener("click", () => {
 
         var numeros = Math.floor(Math.random() * (13));
         nuevonum[i] = numeros;
-        console.log(nuevonum[i]);
+        //console.log(nuevonum[i]);
         var simbolos = Math.floor(Math.random() * (4));
 
 
@@ -58,6 +58,10 @@ mostrar.addEventListener("click", () => {
 
         cards.appendChild(padre);
 
+          console.log(nuevonum[i]);
+
+
+
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////ordenamiento burbuja 
@@ -89,7 +93,9 @@ mostrar.addEventListener("click", () => {
 
             item.innerHTML = Arraynumeros[nuevonum[k]];
             lista.appendChild(item);
-        }
+
+                console.log(nuevonum[k]);
+    }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////termina burbuja
