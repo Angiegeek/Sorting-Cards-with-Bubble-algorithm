@@ -4,15 +4,16 @@ body{
 
 }  
 
-div{
-    
+.creado{
     background-color: white;
-       width: 27%;
+       width: 10%;
     border: 1px solid black;
-    height: 400px;  
+    height: 10%;  
      margin: 2% auto;
   border-radius: 20px;
- /** margin-left: 40%; **/
+
+  
+    
 }
 
 .div1{
@@ -28,21 +29,27 @@ div{
 
 .div2{
     
-    color: black;
-    font-size: 800%;
-    margin-left: 43%;
-    margin-top: 100%;
+     text-align: center;
+    margin-left: -10%;
+    color:black;
+    font-size: 500%;
     
 }
 
 
 .div3{
         color:black;
-   
-    font-size: 500%;
+   font-size: 500%;
     margin-left: 80%;
    margin-top: 20%;
     float: right;
     rotate:180deg;
 }
     
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
