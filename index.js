@@ -22,8 +22,8 @@ mostrar.addEventListener("click", () => {
         nuevonum[i] = numeros;
         //console.log(nuevonum[i]);
         var simbolos = Math.floor(Math.random() * (4));
-
-
+         nuevosim[i] = simbolos;
+         //console.log(nuevosim);
         //let sign = window.prompt("cuadro");
         //falta poner colores 
 
@@ -39,12 +39,11 @@ mostrar.addEventListener("click", () => {
             abajo.style.color = 'red';
         }
 
-
-
         arriba.innerHTML = Arraysimbolos[simbolos];
         medio.innerHTML = Arraynumeros[numeros];
         abajo.innerHTML = Arraysimbolos[simbolos];
 
+        
         ///llama al style creado del css
         padre.classList.add("creado");
         arriba.classList.add("div1");
@@ -58,11 +57,9 @@ mostrar.addEventListener("click", () => {
 
         cards.appendChild(padre);
 
-          console.log(nuevonum[i]);
+        //console.log(nuevonum[i]);
 
-
-
-    }
+}
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /////////ordenamiento burbuja 
     let btn = document.querySelector('#btn');
@@ -72,7 +69,7 @@ mostrar.addEventListener("click", () => {
         var swapp;
         var n = nuevonum.length - 1;
         var x = nuevonum;
-        console.log(nuevonum);
+       // console.log(nuevonum);
         do {
             swapp = false;
             for (var j = 0; j < n; j++) {
@@ -89,12 +86,25 @@ mostrar.addEventListener("click", () => {
         let lista = document.querySelector('#lista-numeros');
         for (let k = 0; k < nuevonum.length; k++) {
             let item = document.createElement('li');
+            let item2=document.createElement('li');
             //item.innerHTML = nuevonum[k];
-
+      
             item.innerHTML = Arraynumeros[nuevonum[k]];
+            
+           console.log(nuevonum[k]);
+           // console.log(nuevosim[k]);
+            nuevosim[k]=nuevosim[nuevonum];
+            //console.log(nuevosim);
+            item2.innerHTML = nuevosim[nuevonum[k]];
+            
             lista.appendChild(item);
+            //lista.appendChild(item2);
+      
 
-                console.log(nuevonum[k]);
+              //  console.log(nuevonum[k]);
+                
+       
+
     }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -132,3 +142,4 @@ mostrar.addEventListener("click", () => {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 });
+
