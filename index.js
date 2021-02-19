@@ -93,16 +93,22 @@ mostrar.addEventListener("click", () => {
         for (let k = 0; k < nuevonum.length; k++) {
             let item = document.createElement('li');
             let item2=document.createElement('li');
-            //item.innerHTML = nuevonum[k];
+            item.innerHTML = nuevonum[k];
       
             item.innerHTML = Arraynumeros[nuevonum[k]];
             
           // console.log(nuevonum[k]);
            // console.log(nuevosim[k]);
-            nuevosim[k]=nuevosim[nuevonum[k]];
+            //nuevosim[k]=nuevosim[nuevonum[k]];
             //console.log(nuevosim);
             item2.innerHTML = nuevosim[nuevonum[k]];
             
+
+   // arriba.innerHTML = Arraysimbolos[simbolos];
+     //    medio.innerHTML = Arraynumeros[nuevonum[h]];
+       // abajo.innerHTML = Arraysimbolos[simbolos];
+
+
             //lista.appendChild(item);
             //lista.appendChild(item2);
       
@@ -126,9 +132,14 @@ mostrar.addEventListener("click", () => {
         }
 
        
-        arriba.innerHTML = nuevosim[k];
-    medio.innerHTML = Arraynumeros[nuevonum[k]];
-        abajo.innerHTML = nuevosim[k];
+     //   arriba.innerHTML = nuevosim[k];
+   // medio.innerHTML = Arraynumeros[nuevonum[k]];
+     //  abajo.innerHTML = nuevosim[k];
+
+
+   arriba.innerHTML = Arraysimbolos[simbolos];
+         medio.innerHTML = Arraynumeros[nuevonum[k]];
+        abajo.innerHTML = Arraysimbolos[simbolos];
 
         
         ///llama al style creado del css
