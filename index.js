@@ -35,16 +35,10 @@ ArrayTotal2=[];
 
         //console.log("numero",nuevonum[i],"simbolo",nuevosim[i]);
      
-
-
-
-
         let padre = document.createElement("div");
         let arriba = document.createElement("div");
         let medio = document.createElement("div");
         let abajo = document.createElement("div");
-
-
 
         if (Arraysimbolos[simbolos] == Arraysimbolos[0] || Arraysimbolos[simbolos] == Arraysimbolos[3]) {
             arriba.style.color = 'red';
@@ -128,24 +122,10 @@ ArrayTotal2=[];
             let medio = document.createElement("div");
             let abajo = document.createElement("div");
 
-
-
-            if (nuevosim[simbolos] == Arraysimbolos[0] || Arraysimbolos[simbolos] == Arraysimbolos[3]) {
+            if (Arraysimbolos[nuevosim[k]] == Arraysimbolos[0] || Arraysimbolos[nuevosim[k]] == Arraysimbolos[3]) {
                 arriba.style.color = 'red';
                 abajo.style.color = 'red';
             }
-
-
-            
-           //console.log("nuevapos",k,"simbolob",nuevosim[[k]]);
-         
-
-           
-           //arriba.innerHTML = Arraysimbolos[simbolos];
-            //medio.innerHTML = Arraynumeros[nuevonum[k]];
-            //abajo.innerHTML = Arraysimbolos[simbolos];
-
-
 
             arriba.innerHTML = Arraysimbolos[nuevosim[k]];
             medio.innerHTML = Arraynumeros[nuevonum[k]];
@@ -206,14 +186,21 @@ ArrayTotal2=[];
 
 
 
-            if (nuevosim[h] == Arraysimbolos[0] || nuevosim[h] == Arraysimbolos[3]) {
+            if (Arraysimbolos[nuevosim[h]] == Arraysimbolos[0] || Arraysimbolos[nuevosim[h]] == Arraysimbolos[3]) {
                 arriba.style.color = 'red';
                 abajo.style.color = 'red';
             }
+
+    
+
+
             arriba.innerHTML = Arraysimbolos[nuevosim[h]];
             medio.innerHTML = Arraynumeros[nuevonum[h]];
             abajo.innerHTML = Arraysimbolos[nuevosim[h]];
 
+
+
+            
 
             ///llama al style creado del css
             padre.classList.add("creado");
