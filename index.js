@@ -187,17 +187,16 @@ ArrayTotal2=[];
                     let aux2=nuevosim[min];
 
                     nuevonum[min] = nuevonum[m];
-
                     nuevosim[min]=nuevosim[m];
-                   nuevosim[m]=aux2;
-
-                    nuevonum[m] = aux;
+                    nuevosim[m]=aux2;
+                    nuevonum[m] = aux;             
                 }
-
-                min++;
             }
 
+         min++;   
         }
+         
+      
 
         for (h = 0; h < nuevonum.length; h++) {
             let padre = document.createElement("div");
