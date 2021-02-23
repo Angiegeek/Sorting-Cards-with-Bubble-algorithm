@@ -72,6 +72,7 @@ ArrayTotal2=[];
     btn.addEventListener('click', bubble_Sort);
 
     function bubble_Sort() {
+        
         var swapp;
         var n = nuevonum.length - 1;
         var x = nuevonum;
@@ -104,7 +105,7 @@ ArrayTotal2=[];
            // console.log(x);
         } while (swapp);
          //console.log(x);
-
+            
         let lista = document.querySelector('#lista-numeros');
         for (let k = 0; k < nuevonum.length; k++) {
             let item = document.createElement('li');
@@ -143,7 +144,7 @@ ArrayTotal2=[];
             padre.appendChild(medio);
             padre.appendChild(abajo);
 
-            cards.appendChild(padre);
+            cards2.appendChild(padre);
 
 
 
@@ -213,7 +214,7 @@ ArrayTotal2=[];
             padre.appendChild(medio);
             padre.appendChild(abajo);
 
-            cards.appendChild(padre);
+            cards3.appendChild(padre);
 
         }
 

@@ -53,3 +53,19 @@ body{
     flex-wrap: wrap;
     
 }
+
+
+/* pruebas*/
+#cards2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#cards3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
